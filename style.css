@@ -100,3 +100,115 @@ aside .noticia{
     column-gap: 1%;
     row-gap: 5%;
 }
+
+@media screen and (max-width:767px){
+    .conteudo{
+        display: block;
+    }
+
+    .container{
+        max-width: 90%;
+    }
+
+    .destaque .noticia a{
+        display: block;
+        font-size: 1.5em;
+    }
+
+    .destaque .noticia img{
+        margin-right: 0;
+    }
+
+    .noticias{
+        display: block;
+    }
+
+    .noticias .noticia{
+        margin-bottom: 32px;
+    }
+
+    aside{
+        padding-left: 0;
+    }
+
+    header div.container {
+       flex-direction: column;
+    }
+
+    .submenu{
+        display: block  ;
+        border:1px solid red;
+        background-color: #fff;
+        position: absolute;
+        left:0;
+        width: 100%;
+        top: 100%;
+
+        position: relative;
+        border: none;
+    }
+
+    .menu{
+        display: none;
+    }
+    
+    .menu > li{
+        clear: both;
+    }
+    
+    .submenu li{
+        display: block;
+        padding: 8px;  
+    }
+
+    .change .bar1{
+        transform: rotate(-45deg) translate(-7px,7px);
+    }
+    .change .bar2{
+        opacity: 0;
+    }
+    .change .bar3{
+        transform: rotate(45deg) translate(-7px,-7px);
+    }
+
+    .botao-menu{
+        display: flex;
+        flex-direction: column;
+        width: 40px;
+        margin-top: 16px;
+        padding-bottom: 16px;
+    }
+    .botao-menu span{
+        border: 2px solid #000;
+        width: 100%;
+        margin-bottom: 5px;
+        margin-left: 5px;
+        position: relative;;
+    }
+    
+}
+
+@media screen and (min-width:768px) and (max-width:1023px){
+    .container{
+        max-width: 90%;
+    }
+
+    .botao-menu{
+        display: none;
+    }
+
+    .destaque .noticia a {
+        font-size: 1.5em;
+    }
+
+    .noticias{
+        grid-template-columns: repeat(2, 49%);
+    }
+    
+}
+
+@media screen and (min-width:1024px) {
+    .botao-menu{
+        display: none;
+    }
+}
